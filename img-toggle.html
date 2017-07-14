@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+</head>
+<body>
+
+<span class="openEye"></span>
+<span class="closedEye"></span>
+
+<script>
+function toggleEye(id) {
+	var ele = document.getElementById(id);
+	if (ele.classList.contains('openEye')) {
+		ele.classList.remove('openEye');
+		ele.classList.add('closedEye');
+	} else {
+		ele.classList.remove('closedEye');
+		ele.classList.add('openEye');
+	}
+}
+</script>
+
+<span id="test" onclick="toggleEye('test')" class="closedEye"></span>
+
+</body>
+</html>
